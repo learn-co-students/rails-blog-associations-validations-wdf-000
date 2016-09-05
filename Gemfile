@@ -42,5 +42,9 @@ group :test, :development do
   gem "simplecov"
   gem "database_cleaner"
   gem "sqlite3"
-  gem "pry"
+  gem "pry-rails"
+  gem 'pry-byebug'
+  gem 'meta_request'
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
