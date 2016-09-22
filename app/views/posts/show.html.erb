@@ -4,6 +4,12 @@
   <h3>Name:</h3>
   <%= @post.name %>
 </p>
+<% if @post.tags.any? %>
+  <h4>Tags:</h4>
+  <% @post.tags.each.with_index(1) do |tag, i| %>
+    <%= i %>. <%=tag.name %><br>
+  <% end %>
+<% end %>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
