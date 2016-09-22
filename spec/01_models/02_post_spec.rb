@@ -1,4 +1,4 @@
-describe Post do
+ describe Post do
   context 'Post validations' do
     it "post is valid" do
       expect(Post.create(name: "hi", content: "hello")).to be_valid
